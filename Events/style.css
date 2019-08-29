@@ -1,0 +1,14 @@
+.someDiv{
+    width:50%;
+    height:100px;
+    background-color: blue;
+    margin-top:10px;
+
+}
+.normalDiv{
+    width:50%;
+    height:100px;
+    background-color: red;
+    margin:auto;
+    margin-top:10px
+}

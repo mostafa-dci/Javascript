@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Function with Events</title>
+    <script src="./ex.js"></script>
+    <style>
+        .co {
+            width: 25%;
+            height: 250px;
+            border: 1px solid;
+            border-radius: 50%;
+            background-color: red;
+            margin: auto;
+            transition: 2s;
+        }
+
+        .co h1 {
+            padding: 16%;
+            left: 24%;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="head">This is the normal headline</h1>
+    <input type="button" value="change the headline" onclick="changeh1()">
+
+    <div id="c" class="co" onmouseover="changeDiv()" onmouseout="returnDiv()"></div>
+</body>
+
+</html>

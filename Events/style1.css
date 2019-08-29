@@ -1,0 +1,6 @@
+.someDiv{
+    width:25%;
+    height:100px;
+    background-color: brown;
+    transition: 5s;
+}

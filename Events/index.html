@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body >
+    <h1 id="h1">Events</h1>
+    <!-- first event is onclick, any event can apply for any HTML Element  -->
+    <button onclick="alert('Hey');" style="width: 25% ">First Button</button>
+    
+    <br>
+    <input onmouseover="alert('the mouse over me')" style="color: red" type="button" value="Second Button">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- <element event="Javascript command" > -->
+    <div ondblclick="alert('doble Click')" class="someDiv">Doble Cloick On me!</div>
+    <div ondblclick="console.log('doble Click')" class="someDiv">look at the console!</div>
+    <div ondblclick="document.getElementById('h1').innerHTML='You had doble clicked on the div'" class="someDiv">look at the headline!</div>
+    <div onmouseout="alert('mose out')" class="someDiv">Mouse Out!</div>
+    <div class="normalDiv"  onmouseover="alert('the mouse over me');console.log('the mouse over me')" >Hover Me</div>
+</body>
+</html>
