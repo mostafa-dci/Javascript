@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="main">
+    <div id="color-picker" class="color-picker">
+        <div id="result"></div>
+    </div>
+    <input id="red" onmousemove="change()" value="0"  type="range" min="0" max="255">
+    <input id="green" onmousemove="change()" value="0" type="range" min="0" max="255">
+    <input id="blue" onmousemove="change()" value="0" type="range" min="0" max="255" step="1">
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sizing</title>
+    <style>
+    .c{
+        width: 25%;
+        height: 225px;
+        border-radius: 50%;
+        border: 1px solid;
+        background-color: red;
+        margin: auto;
+        margin-top: 10%;
+        position: relative;
+        top:112.5px;
+    }
+    input{
+        width:25%;
+        border:1px solid black;
+        cursor: e-resize;
+        -webkit-appearance: none;
+        margin: auto;
+display:block;
+
+    }
+    </style>
+</head>
+<body>
+        <script>
+                function cSize(){
+                    // alert(document.getElementById("range").value);
+                    var divSize = document.getElementById("range").value;
+                    document.getElementById("c").style.width=divSize+"px";
+                    document.getElementById("c").style.height=divSize+"px";
+                    document.getElementById("c").style.top=-divSize/2+"px";
+                    console.log( divSize)
+                }
+                </script>
+                 <input id="range" type="range" value="50" min="0" max="1000" onmousemove="cSize()">
+    <div id="c" class="c"></div>
+   
+
+
+   
+</body>
+</html>

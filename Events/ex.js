@@ -5,6 +5,7 @@ function changeDiv(){
     document.getElementById('c').style.width = "35%";
     document.getElementById('c').style.height = "260px";
     document.getElementById('c').innerHTML = "<h1>expanding</h1>"
+    document.title="Edited by javascript"
 }
 
 
