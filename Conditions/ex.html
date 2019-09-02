@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex</title>
+</head>
+<body>
+    <input id="textbox" type="text" placeholder="Type Your Age Please">
+    <br>
+    <input type="button" onclick="test()" value="check">
+    <br>
+    <div class="result"></div>
+    <input id="ex" type="text" placeholder="Type Your Age Please">
+    <br>
+    <input type="button" onclick="newfn()" value="check">
+    <br>
+    <div class="result"></div>
+
+
+    <input id="ex1" type="text" placeholder="Type Your Age Please">
+    <br>
+    <input type="button" onclick="newfn1()" value="check">
+    <br>
+    <div class="result"></div>
+    <script>
+        var x =5;
+    function test(){
+        var age = document.getElementById("textbox").value;
+        if(age <18){
+            document.getElementsByClassName("result")[0].innerHTML = "Hey You are  a Kid "
+        }
+        if(age>=18 && age <70){
+            document.getElementsByClassName("result")[0].innerHTML = "Welcome"
+        }
+        if(age>=70){
+            document.getElementsByClassName("result")[0].innerHTML = "You are senior"
+        }
+
+
+        console.log(age)
+    }
+    function newfn(){
+        var age = document.getElementById("ex").value;
+        if(age>=150 && age<750){
+            document.getElementsByClassName("result")[1].innerHTML = "true"
+        }
+        else{
+            document.getElementsByClassName("result")[1].innerHTML = "false"
+        }
+        console.log(x)
+    }
+    function newfn1(){
+        var age = document.getElementById("ex1").value;
+        if(  (age >=1 && age <=5) || (age >=30 && age<=40) ){
+            document.getElementsByClassName("result")[2].innerHTML = "Opend"
+        }else{
+            document.getElementsByClassName("result")[2].innerHTML = "closed"
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="calculator">
+        <table>
+            <tr>
+                <th colspan="4">
+                    <!-- screen area -->
+                    <input id="result" type="text" disabled placeholder="0" value="">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" onclick="change(1)" value="1">
+                </td>
+                <td>
+                        <input type="button" onclick="change(2)" value="2">
+                </td>
+                <td>
+                        <input type="button" onclick="change(3)" value="3">
+                </td>
+                <td>
+                        <input type="button" onclick="operations('+')" value="+">
+                </td>
+            </tr>
+            <tr>
+                    <td>
+                        <input type="button" onclick="change(4)" value="4">
+                    </td>
+                    <td>
+                            <input type="button" onclick="change(5)" value="5">
+                    </td>
+                    <td>
+                            <input type="button" onclick="change(6)" value="6">
+                    </td>
+                    <td>
+                            <input type="button" onclick="operations('-')" value="-">
+                    </td>
+                </tr>
+                <tr>
+                        <td>
+                            <input type="button" onclick="change(7)" value="7">
+                        </td>
+                        <td>
+                                <input type="button" onclick="change(8)" value="8">
+                        </td>
+                        <td>
+                                <input type="button" onclick="change(9)" value="9">
+                        </td>
+                        <td>
+                                <input type="button" onclick="operations('*')" value="*">
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <input type="button" onclick="change('.')" value=".">
+                            </td>
+                            <td>
+                                    <input type="button" onclick="change(0)" value="0">
+                            </td>
+                            <td>
+                                    <input type="button" onclick="eq()" value="=">
+                            </td>
+                            <td>
+                                    <input type="button" onclick="operations('/')" value="/">
+                            </td>
+                        </tr>
+        </table>
+
+
+
+<script src="./index.js"></script>
+    </div>
+</body>
+</html>
